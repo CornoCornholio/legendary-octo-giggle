@@ -3,6 +3,8 @@ var paths = require('../paths');
 var mainBowerFiles = require('main-bower-files');
 
 var plugins = require("gulp-load-plugins")({
+  DEBUG: true,
+  lazy: false,
   pattern: ['gulp-*', 'gulp.*'],
   replaceString: /\bgulp[\-.]/
 });

@@ -1,0 +1,539 @@
+/*----- RTE ------------------------------------------------------------------*/
+#menuBarDiv > a:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+#menuBarDiv > a {
+    padding: 0 1rem;
+    height: 1.5rem;
+    background-color: #ffffff;
+    border: none;
+    color: #262626;
+    cursor: pointer;
+    display: table-cell;
+    outline: none;
+    font-size: 0.87rem;
+    line-height: 100%;
+    margin: .15625rem 0;
+    position: relative;
+    width: 2.12rem;
+    min-width: 2.12rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.Editor-editor {
+    min-height: 100px;
+    margin: 5px 0 5px 0;
+
+}
+.Editor-container {
+    margin-top: 10px;
+}
+
+/*------------ Navigation --------------------------*/
+
+.grid .cells5.row > .colspan2.cell {
+    width: 23%;
+}
+
+
+.cell.colspan2 ul li h3 {
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.m-menu > li:first-child { margin-left: 50px}
+
+.m-menu > li:first-child:hover {
+    background-color: #0B6268;
+}
+
+.m-menu .m-menu-container li, .m-menu .m-menu-container a{
+    padding: 4px;
+}
+
+.titleCell {
+    border-width: 1px;
+    border-bottom-style:solid;
+    height: 65px;
+    margin-bottom: 20px;
+}
+
+.m-menu {
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 0 0 0;
+}
+
+/*.dropdown-toggle { color: red;}*/
+
+.m-menu > li > a, .m-menu .m-menu-item > a {color: #ffffff;}
+
+.horizontal-menu li {
+	color: #ffffff;
+}
+
+.d-menu {max-width:none;}
+.d-menu li a:hover{
+background-color:black;
+}
+.d-menu a.active-toggle{
+	background-color:black;
+}
+a.sub-menu.dropdown-toggle.active-toggle {
+	background-color: #000000;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+.menu-list-border{
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.min-width-6-items { min-width: 16%;}
+
+.burger-width {width: 5%;}
+.burger-background-color {background-color: #0B6268}
+.burger-inline {float: left;}
+#burger-right {height:3.12rem; width:95%;}
+.app-bar .app-bar-pullbutton:hover {background-color: #0B6268}
+.app-bar-pullmenu.hidden.flexstyle-app-bar-menu {
+	width:350%;
+	color: #000000
+}
+.app-bar .app-bar-pullmenu .app-bar-menu{
+
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+
+.min-width-6-items .first-level {
+	width: 100%;
+	text-align:center;
+}
+
+a.dropdown-toggle.active-toggle {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+ .m-menu > li, .m-menu .m-menu-item { background-color: rgba(0,0,0,0);}
+
+.app-bar .app-bar-menu > li > a.dropdown-toggle::before {
+	border-color: #000000}
+.app-bar .app-bar-pullmenu .app-bar-menu .d-menu li a{
+	color: #000000;
+}
+.app-bar .app-bar-menu > li .d-menu li:not(.disabled):hover > a{	color: #ffffff;}
+
+
+.app-bar-pullmenubar.app-bar-menu li:hover  >  .dropdown-toggle::before{
+	border-color: #ffffff;
+}
+
+.app-bar .app-bar-pullmenu .app-bar-menu .d-menu{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.app-bar .app-bar-pullmenu .app-bar-menu li:hover > a {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.app-bar .app-bar-pullmenu .app-bar-menu li:hover ul {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
+.first-level.dropdown-toggle::before { border-color: #ffffff;}
+.dropdown-toggle.active-toggle::before {
+	border-color: #000000}
+
+ul.d-menu a.dropdown-toggle::before{
+	border-color: #000000;
+}
+
+.active-container::after{
+	background-color:black;
+}
+
+ul.m-menu > li {
+    width: 25%;
+    min-height: 85px;
+}
+ul.m-menu li img {
+    width: 312px;
+    height: 50px;
+}
+
+.navBgColor { background: linear-gradient(rgb(10,83,88),rgb(15,141,151));}
+/*.navBgColor { background-image:url(C://Users/pmc10134/Working/images/Capture.png);}*/
+
+.input-control input{
+    border-radius: 5px;
+}
+input[type=text]{
+	background-color: #ffffff;
+}
+
+li.place-right form {
+	padding-top: 1rem;
+}
+button.button{
+
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+
+}
+
+/*----- PDF -----------------------------------------------------------------*/
+.pdfobject-container {
+	width: 100%;
+	height: 100%;
+}
+
+/*----- Page -----------------------------------------------------------------*/
+.shadow {
+    -webkit-box-shadow: 0px 5px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 11px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 11px 0px rgba(50, 50, 50, 0.75);
+}
+.tile-square .tile-label-flat,
+.tile-square .tile-label {
+    top: 125px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+.tile-square .tile-label-flat {
+    position: absolute;
+    top: 36px;
+}
+.square {
+    height: 180px;
+    width:180px;
+}
+.flat {
+    width: 243px;
+    height: 90px;
+}
+.square-tile-group {
+    clear: both;
+    margin: auto;
+    width: 760px;
+    text-align: center;
+    text-align: center;
+}
+.logo_stripe {
+     background-image: url(../images/logo_stripe.png);
+}
+.no-border {
+    border:0px solid red;
+}
+.touch {
+    -webkit-overflow-scrolling: touch;
+}
+.margin-right-response {
+    margin-right: 1.2rem;
+}
+.margin-left-response {
+    margin-left: 1.2rem;
+}
+.eraser {
+    position: relative;
+    top: 7px;
+}
+.scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 30001;
+    cursor: pointer;
+    display: none;
+}
+.err {
+    position: relative;
+    top: -5px;
+    display: none;
+}
+.myH1 {
+    color: black !important;
+    font: 400 2.25rem/1.1 "Segoe UI", "Open Sans", sans-serif, serif;
+    margin: .625rem 0;
+    text-indent: 0;
+    display: block;
+}
+[contenteditable="true"].single-line {
+    white-space: nowrap;
+    overflow: hidden;
+}
+[contenteditable="true"].single-line br {
+    display: none;
+}
+
+[contenteditable="true"].single-line * {
+    display: inline;
+    white-space: nowrap;
+}
+.comment-button-cancel,
+.comment-button-save {
+    min-width: 3rem;
+}
+
+.margin-trb-10 {
+    margin: 10px 10px 10px 0;
+}
+.sub-heading {
+    margin-left: 2.6rem !important;
+}
+.fake-contenteditable,
+[contenteditable] {
+    padding: 5px;
+    outline: 1px dashed #CCC;
+}
+[contenteditable] {
+    background-color: white;
+}
+.fake-contenteditable {
+    padding:3px;
+}
+.fake-contenteditable:hover,
+.fake-contenteditable:focus,
+[contenteditable]:hover, [contenteditable]:focus {
+    outline: 1px dashed #0090D2;
+}
+[contenteditable]:empty::before {
+    content: attr(data-placeholder);
+    font-style: italic;
+    opacity: .75;
+    background-color: white;
+}
+.hide-me {
+    display: none;
+}
+.app-logo {
+    height: 28px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height:100%;
+}
+.container {
+    width: 100%;
+}
+h1 {
+    color: black !important;
+}
+a {
+    text-decoration: none !important;
+}
+.text-center {
+    text-align: center;
+}
+.page-content {
+    margin-top: 65px;
+    overflow-y: scroll;
+    padding: 0 40px 0 40px;
+    -webkit-overflow-scrolling: touch;
+}
+.group-content {
+    padding: .625rem 1.825rem .625rem 2.5rem;
+    border: 1px #ccc dashed;
+    position: relative;
+    margin: 0 0 .625rem 0;
+    background-color: transparent;
+    min-height: 160px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.margin-right-20 {
+    margin-right: 20px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.clear-left {
+    clear: left;
+}
+
+/*----- Tiles ----------------------------------------------------------------*/
+.app-tile-wide2,
+.app-tile-wide {
+    width: 150px;
+    display: block;
+    float: left;
+    margin: 5px;
+    background-color: #eeeeee;
+    box-shadow: inset 0 0 1px #ffffcc;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+    width: 310px;
+    height: 150px;
+}
+.tile-counter {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #23365e;
+    width: 60px;
+    font-size: 3rem;
+    height: 80px;
+    text-align: center;
+}
+.tile-add {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1rem;
+    width: 310px;
+}
+.tile-label1 {
+    padding-left: 10px;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 1rem;
+}
+.tile-label2 {
+    text-align: center;
+    font-size: 1rem;
+    height: 80px;
+    vertical-align: middle;
+    width: 310px;
+    display: table-cell;
+}
+.tile-add,
+.tile-half {
+    height: 80px;
+}
+.tile-progress {
+    padding-top: 2px;
+    height: 25px;
+    text-align: center;
+}
+.app-tile-wide2 {
+    height: 105px;
+}
+/*----- Document -------------------------------------------------------------*/
+.max {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+}
+.max-img {
+    cursor: pointer;
+    float: right;
+    font-size: 3rem;
+    position: absolute;
+}
+
+/*----- Recommendations ------------------------------------------------------*/
+
+/*----- Comments -------------------------------------------------------------*/
+.comment-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+    min-width: 100%;
+    z-index: 1048;
+    background-color: red;
+}
+.listview .list {
+    height: auto !important;
+    cursor: default;
+}
+.list:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.comment-action-button {
+     margin: 10px 0 10px 0;
+}
+.comment-modal {
+    width: 600px;
+}
+.comment-text-area {
+    height: 150px;
+    width: 650px;
+}
+.comment-child {
+    padding-left: 0.625rem;
+    margin-left: 15px;
+}
+.comment-child-border {
+    border-left: 2px solid #16499a;
+}
+.comment-audit{
+    display: block;
+}
+.comment-button-group {
+    padding: 10px 0 10px 0;
+}
+.comment-inplace {
+    width: 100%;
+}
+
+
+/*----- Dialog ---------------------------------------------------------------*/
+.dialog .dialog-close-button {
+    top: 0.5rem !important;
+}
+.frame {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.dialog-comments {
+    border: 2px solid red;
+}
+.comment-textarea {
+    width: 600px;
+    height: 150px;
+}
+
+/*----- SharePoint Override --------------------------------------------------*/
+.ms-dlgCloseBtnImg {
+    box-sizing: border-box !important;
+    max-width: none !important;
+}
+.ms-dlgTitleBtns {
+    margin-right: 0 !important;
+}
+.ms-accessible {
+    display: none !important;
+}
+
+.draft {
+     background-image: url("../images/draft.png");
+     background-repeat: repeat-y;
+} 

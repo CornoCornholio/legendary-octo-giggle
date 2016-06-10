@@ -1,0 +1,13 @@
+{
+  "name": "line-control",
+  "homepage": "https://github.com/suyati/line-control",
+  "_release": "01844eb0f9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "01844eb0f983004f516bb405805eefdc9bd93259"
+  },
+  "_source": "https://github.com/suyati/line-control.git",
+  "_target": "master",
+  "_originalSource": "https://github.com/suyati/line-control.git"
+}
