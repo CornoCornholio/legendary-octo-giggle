@@ -1,0 +1,48 @@
+{
+    "name": "IGB",
+    "authors": [
+        "Pete <peter.s.giles@gmail.com>"
+    ],
+    "description": "",
+    "main": "",
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "1.12.4",
+        "pdfobject": "^1.2.0",
+        "font-awesome": "fontawesome#^4.6.3",
+        "knockout": "^3.4.0",
+        "jscolor": "^1.4.2",
+        "line-control": "https://github.com/suyati/line-control.git#master",
+        "metro": "^3.0.14",
+        "jquery-ui": "^1.11.4",
+        "bootstrap": "^3.3.6"
+    },
+    "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/css/*.css",
+                "dist/js/bootstrap.js"
+            ]
+        },
+        "line-control": {
+            "main": [
+                "editor.css",
+                "editor.js"
+            ]
+        },
+        "font-awesome": {
+            "main": [
+                "css/*.min.css",
+                "fonts/*.*"
+            ]
+        }
+    }
+}

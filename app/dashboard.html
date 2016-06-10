@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="WebPartPageExpansion" content="full" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Policy Recommendations</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <!-- SharePoint ScriptLink -->
+
+    <script type="text/javascript" src="./vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./vendor/knockout/dist/knockout.js"></script>
+    <script type="text/javascript" src="./vendor/metro/build/js/metro.min.js"></script>
+
+    <!--
+    <script type="text/javascript">
+        var script1 = document.createElement('script')
+        script1.src = './js/dashboard.js?v=' + Math.random();
+        $("head").append(script1);
+    </script>
+-->
+    <script type="text/javascript" src="./js/dashboard.js"></script>
+
+
+    <link href="./vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="./vendor/metro/build/css/metro.min.css" rel="stylesheet" type="text/css">
+    <link href="./vendor/metro/build/css/metro-schemes.css" rel="stylesheet" type="text/css">
+    <link href="./css/policy.css" rel="stylesheet" type="text/css" />
+    <link href="./css/dashboard.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- SharePoint SharePointForm-->
+
+    <!-- SharePoint FormDigest-->
+
+    <div class="main-container">
+
+        <header id="page_header" class="fixed-top" data-role="appbar">
+            <div class="navBgColor shadow">
+                <ul class="m-menu">
+                    <li>
+                        <a href="#"><img src="./images/dpmc-crest.png"></a>
+                    </li>
+                    <li class="place-right no-hovered">
+                        <form>
+                            <div class="input-control text" style="width: 250px; margin-right: 10px">
+
+                                <button class=" button comment-button-cancel fa fa-search fa-2x"><span class="mif-search"></span></button>
+
+                                <input type="text" placeholder="Search...">
+                            </div>
+
+                        </form>
+                    </li>
+
+                </ul>
+
+                <ul class="horizontal-menu">
+                    <li class="menu-list menu-list-border min-width-6-items"><a href="#" class="first-level">Strategic Overview</a></li>
+                    <li class="menu-list menu-list-border min-width-6-items"><a href="#" class="first-level">Getting Started</a></li>
+                    <li class="menu-list menu-list-border min-width-6-items"><a href="#" class="first-level">Recommendations</a></li>
+                    <li class="menu-list menu-list-border min-width-6-items">
+                        <a href="#" class=" first-level dropdown-toggle">Policy Advice</a>
+                        <ul class="d-menu" data-role="dropdown">
+                            <li>
+                                <a href="#" class="sub-menu dropdown-toggle">Jobs and growth - a strong new economy</a>
+                                <ul class="d-menu" data-role="dropdown">
+                                    <li><a href="#">Jobs and growth 1</a></li>
+                                    <li><a href="#">Jobs and growth 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Families and a strong safety net</a></li>
+                            <li><a href="#">Keep Australia safe and secure</a></li>
+                            <li><a href="#">Delivering a good government</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list menu-list-border min-width-6-items"><a href="#" class="first-level">Commitments</a></li>
+                    <li class="menu-list min-width-6-items"><a href="#" class="first-level">Portfolio</a></li>
+                </ul>
+
+                <ul class="horizontal-menu compact">...</ul>
+
+                <!-----Image----->
+
+            </div>
+        </header>
+
+        <div class="container page-content margin-bottom-20">
+
+            <div id="divHTML" style="width:100%;display:none;" class="padding20">
+                <div id="divHTML_Content" style="display: table;margin: 0 auto;">
+                    LOAD HTML CONTENT IN HERE
+                </div>
+            </div>
+
+            <div id="divMsg" style="width:100%;display:none;" class="padding20">
+                <div style="display: table;margin: 0 auto;">
+                    <div style="font-size: 0.7rem;" class="fg-white">
+                        <a href="#" onclick="CloseWelcomeMsg(event);" class="pull-right fa fa-times-circle" style="text-decoration:none;font-size:1.5rem;color:white;margin-top:0.6rem;margin-right:0.6rem;"></a>
+                        <label class="input-control checkbox small-check pull-right">
+                            <span class="caption">Don't show this message again</span>
+                            <input id="chkHideWelcomeMsg" type="checkbox" checked>
+                            <span class="check"></span>
+                        </label>
+                    </div>
+                    <div id="msg" class="bg-gray fg-white" style="padding:5px 25px 25px 25px;">
+                        WELCOME MESSAGE IN HERE
+                    </div>
+                </div>
+            </div>
+
+            <div id="divDashboard">
+                <div style="clear:both;margin-top: 20px;">&nbsp;</div>
+                <div class="square-tile-group">
+
+                    <div style="display: block">
+                        <div id="T1" class="tile-square bg-steel fg-white square" data-role="tile">
+                            <div class="tile-content iconic">
+                                <span class="icon fa fa-cloud"></span>
+                                <span class="tile-label">Strategic overview</span>
+                            </div>
+                        </div>
+                        <div id="T2" class="tile-square bg-green fg-white square" data-role="tile">
+                            <div class="tile-content iconic">
+                                <span class="icon fa fa-play-circle-o"></span>
+                                <span class="tile-label">Getting started</span>
+                            </div>
+                        </div>
+                        <div id="T3" class="tile-square bg-darkCyan fg-white square" data-role="tile">
+                            <div class="tile-content iconic">
+                                <span class="icon fa fa-thumbs-o-up"></span>
+                                <span class="tile-label">Recommendations</span>
+                            </div>
+                        </div>
+                        <div id="T4" class="tile-square bg-mauve fg-white square" data-role="tile">
+                            <div class="tile-content iconic">
+                                <span class="icon fa fa-calendar"></span>
+                                <span class="tile-label">Timeline of first term</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="square-tile-group">
+                    <div id="T5" class="tile-square bg-teal fg-white square" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon fa fa-money"></span>
+                            <span class="tile-label">Economic & II&E policy</span>
+                        </div>
+                    </div>
+                    <div id="T6" class="tile-square bg-darkOrange fg-white square" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon fa fa-globe"></span>
+                            <span class="tile-label">National Security & International Security</span>
+                        </div>
+                    </div>
+                    <div id="T7" class="tile-square bg-cyan fg-white square" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon fa fa-shield"></span>
+                            <span class="tile-label">Social Policy</span>
+                        </div>
+                    </div>
+                    <div id="T8" class="tile-square bg-darkTeal fg-white square" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon fa fa-university"></span>
+                            <span class="tile-label">Good Governance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="clear:both;margin-top: 20px;">&nbsp;</div>
+                <div class="square-tile-group">
+                    <div id="T9" class="tile-square bg-gray fg-white flat" data-role="tile">
+                        <div class="tile-content">
+                            <span class="tile-label-flat">Election commitments database</span>
+                        </div>
+                    </div>
+                    <div id="T10" class="tile-square bg-gray fg-white flat" style="width:244px;" data-role="tile">
+                        <div class="tile-content">
+                            <span class="tile-label-flat">Your portfolio</span>
+                        </div>
+                    </div>
+                    <div id="T11" class="tile-square bg-gray fg-white flat" data-role="tile">
+                        <div class="tile-content">
+                            <span class="tile-label-flat">Martin's letter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
