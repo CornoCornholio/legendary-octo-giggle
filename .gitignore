@@ -31,6 +31,9 @@ node_modules
 jspm_packages
 bower_components
 
+# stuff that shouldn't be on the internet
+doc
+
 # Optional npm cache directory
 .npm
 
