@@ -3,6 +3,8 @@ var paths = require('../paths');
 var runSequence = require('run-sequence');
 
 var plugins = require("gulp-load-plugins")({
+  DEBUG: true,
+  lazy: false,
   pattern: ['gulp-*', 'gulp.*'],
   replaceString: /\bgulp[\-.]/
 });
