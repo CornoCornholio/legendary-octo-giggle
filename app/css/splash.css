@@ -1,0 +1,27 @@
+body {
+    background: #0a5257; /* Old browsers */
+    background: -moz-linear-gradient(top,  #0a5257 0%, #0f8e97 25%, #0f8e97 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #0a5257 0%,#0f8e97 25%,#0f8e97 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #0a5257 0%,#0f8e97 25%,#0f8e97 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5257', endColorstr='#0f8e97',GradientType=0 ); /* IE6-9 */
+}
+#splash_logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 220px;
+}
+#splash_text {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px; /* Half the width */
+}
+#splash_house {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px; /* Half the width */
+}
