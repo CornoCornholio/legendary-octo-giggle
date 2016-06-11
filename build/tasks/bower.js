@@ -1,13 +1,7 @@
 var gulp = require('gulp');
 var paths = require('../paths');
+var plugins = require('../plugins');
 var mainBowerFiles = require('main-bower-files');
-
-var plugins = require("gulp-load-plugins")({
-  DEBUG: true,
-  lazy: false,
-  pattern: ['gulp-*', 'gulp.*'],
-  replaceString: /\bgulp[\-.]/
-});
 
 gulp.task('bower', function() { 
     return plugins.bower()
@@ -16,5 +10,5 @@ gulp.task('bower', function() { 
 
 gulp.task('pack', function() {
     return gulp.src(mainBowerFiles(/* options */), { base: paths.bower })
-        .pipe(gulp.dest(paths.vendor)) 
+        .pipe(gulp.dest(paths.output + '/js/vendors')) 
 });

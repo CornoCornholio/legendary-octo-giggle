@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var paths = require('../paths');
-
 var plugins = require('../plugins');
+
 var stylish = require('jshint-stylish');
 
 // runs jshint on all .js files

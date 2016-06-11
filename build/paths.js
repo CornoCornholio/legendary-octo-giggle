@@ -13,6 +13,5 @@ module.exports = {
   style: 'css/**/*.css',
   output: outputRoot,
   doc:'./doc',
-  bower: './bower_components' ,
-  vendor: outputRoot + 'vendor'
+  bower: './bower_components' 
 };
