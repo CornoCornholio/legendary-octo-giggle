@@ -4,42 +4,44 @@ var plugins = require('../plugins');
 var runSequence = require('run-sequence');
 var es = require('event-stream');
 var mainBowerFiles = require('main-bower-files');
+var exists = require('path-exists').sync;
 
 // copies changed html files to the output directory
 gulp.task('build-html', function() {
 
-  // It's not necessary to read the files (will speed up things), we're only after their paths:
-  // Concatenate vendor scripts
-  var vendorJsStream = gulp.src(mainBowerFiles( /* options */ ), {
-          read: false,
-          base: paths.bower
-      })
-      //  .pipe(plugins.concat('vendors.js'))
-      .pipe(gulp.dest(paths.output + '/js/vendors')) ;
+    // Concatenate vendor scripts
+    var vendorJsStream = gulp.src(mainBowerFiles( /* options */ ).map(function(path, index, arr) {
+            var newPath = path.replace(/.([^.]+)$/g, '.min.$1');
+            return exists(newPath) ? newPath : path;
+        }), {
+            base: paths.bower
+        })
+        //  .pipe(plugins.concat('vendors.js'))
+        .pipe(gulp.dest(paths.output + '/vendors')) ;
 
-  // Concatenate AND minify app sources
-  var appJsStream = gulp.src(['./app/js/*.js'])
-      .pipe(plugins.concat('app.js'))
-      .pipe(plugins.uglify())
-      .pipe(gulp.dest(paths.output + '/js'));
+    // Concatenate AND minify app sources
+    var appJsStream = gulp.src(['./app/js/*.js'])
+        .pipe(plugins.concat('app.js'))
+        .pipe(plugins.uglify())
+        .pipe(gulp.dest(paths.output + '/js'));
 
-  var appCssStream = gulp.src(['./app/css/*.css'])
-      .pipe(plugins.sourcemaps.init())
-      .pipe(plugins.cleanCss({
-          debug: true,
-          compatibility: 'ie8'
-      }, function(details) {
-          console.log(details.name + ': ' + details.stats.originalSize);
-          console.log(details.name + ': ' + details.stats.minifiedSize);
-      }))
-      .pipe(plugins.sourcemaps.write())
-      .pipe(gulp.dest(paths.output + '/css'));
+    var appCssStream = gulp.src(['./app/css/*.css'])
+        .pipe(plugins.sourcemaps.init())
+        .pipe(plugins.cleanCss({
+            debug: true,
+            compatibility: 'ie8'
+        }, function(details) {
+            console.log(details.name + ': ' + details.stats.originalSize);
+            console.log(details.name + ': ' + details.stats.minifiedSize);
+        }))
+        .pipe(plugins.sourcemaps.write())
+        .pipe(gulp.dest(paths.output + '/css'));
 
     return gulp.src(paths.html)
-    .pipe(plugins.inject(vendorJsStream, {
-        name: 'bower'
-    }))
-    .pipe(plugins.inject(es.merge(appJsStream, appCssStream)))
+        .pipe(plugins.inject(vendorJsStream, {
+            name: 'bower'
+        }))
+        .pipe(plugins.inject(es.merge(appJsStream, appCssStream)))
         //.pipe(changed(paths.output, {extension: '.html'}))
         .pipe(gulp.dest(paths.output));
 });
@@ -71,7 +73,7 @@ gulp.task('build-images', function() {
 gulp.task('build', function(callback) {
     return runSequence(
         'clean',
-        'pack', ['build-css', 'build-js', 'build-images', 'build-html'],
+        ['build-css', 'build-js', 'build-images', 'build-html'],
         callback
     );
 });
