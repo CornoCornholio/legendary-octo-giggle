@@ -9,9 +9,11 @@ module.exports = {
   html: appRoot + '**/*.html',
   css: appRoot + '**/*.css',
   js: appRoot + '**/*.js',
+  md: appRoot + '**/*.md',
   images: appRoot + '**/*.png',
   style: 'css/**/*.css',
   output: outputRoot,
+  outputAssets: outputRoot + '/siteassets',
   doc:'./doc',
   bower: './bower_components' 
 };

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages" Url="SitePages">
+    <File Path="Pages\Admin.aspx" Url="Admin.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_Policy.aspx" Url="OLD_Policy.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_Dashboard.aspx" Url="OLD_Dashboard.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_Dashboard2.aspx" Url="OLD_Dashboard2.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_PolicyAdvice.aspx" Url="OLD_PolicyAdvice.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\Dashboard.aspx" Url="Dashboard.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\SES.aspx" Url="SES.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_DetailedAdvice.aspx" Url="OLD_DetailedAdvice.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\PolicyAdvice.aspx" Url="PolicyAdvice.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\OLD_DashboardTealFlat_Dinh.aspx" Url="OLD_DashboardTealFlat_Dinh.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE"/>
+    <File Path="Pages\OLD_DashboardFlexTest.aspx" Url="OLD_DashboardFlexTest.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Pages\ViewHtml.aspx" Url="ViewHtml.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

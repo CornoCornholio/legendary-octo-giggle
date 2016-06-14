@@ -17,13 +17,13 @@ gulp.task('build-html', function() {
             base: paths.bower
         })
         //  .pipe(plugins.concat('vendors.js'))
-        .pipe(gulp.dest(paths.output + '/vendors')) ;
+        .pipe(gulp.dest(paths.outputAssets + '/vendors')) ;
 
     // Concatenate AND minify app sources
     var appJsStream = gulp.src(['./app/js/*.js'])
         .pipe(plugins.concat('app.js'))
         .pipe(plugins.uglify())
-        .pipe(gulp.dest(paths.output + '/js'));
+        .pipe(gulp.dest(paths.outputAssets + '/js'));
 
     var appCssStream = gulp.src(['./app/css/*.css'])
         .pipe(plugins.sourcemaps.init())
@@ -35,7 +35,7 @@ gulp.task('build-html', function() {
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
         .pipe(plugins.sourcemaps.write())
-        .pipe(gulp.dest(paths.output + '/css'));
+        .pipe(gulp.dest(paths.outputAssets + '/css'));
 
     return gulp.src(paths.html)
         .pipe(plugins.inject(vendorJsStream, {
@@ -50,19 +50,25 @@ gulp.task('build-html', function() {
 gulp.task('build-css', function() {
     return gulp.src(paths.css)
         //.pipe(changed(paths.output, {extension: '.css'}))
-        .pipe(gulp.dest(paths.output));
+        .pipe(gulp.dest(paths.outputAssets));
 });
 
 gulp.task('build-js', function() {
     return gulp.src(paths.js)
         //.pipe(changed(paths.output, {extension: '.css'}))
-        .pipe(gulp.dest(paths.output));
+        .pipe(gulp.dest(paths.outputAssets));
 });
 
 // copies changed css files to the output directory
 gulp.task('build-images', function() {
     return gulp.src(paths.images)
         //.pipe(changed(paths.output, {extension: '.css'}))
+        .pipe(gulp.dest(paths.outputAssets));
+});
+
+gulp.task('build-markdown', function () {
+    return gulp.src(paths.md)
+        .pipe(plugins.markdown())
         .pipe(gulp.dest(paths.output));
 });
 
@@ -73,7 +79,7 @@ gulp.task('build-images', function() {
 gulp.task('build', function(callback) {
     return runSequence(
         'clean',
-        ['build-css', 'build-js', 'build-images', 'build-html'],
+        ['build-css', 'build-js', 'build-images', 'build-markdown', 'build-html'],
         callback
     );
 });
