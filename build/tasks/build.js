@@ -25,7 +25,7 @@ gulp.task('build-html', function() {
         .pipe(plugins.uglify())
         .pipe(gulp.dest(paths.outputAssets + '/js'));
 
-    var appCssStream = gulp.src(['./app/css/*.css'])
+    var appCssStream = gulp.src(['./app/css/styles.css'])
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.cleanCss({
             debug: true,
