@@ -274,3 +274,61 @@
 .no-padding {
     padding: 0;
 }
+
+
+
+.staff > ul {
+	list-style: none;
+	font-size: 0px;
+}
+.staff > ul li {
+	display: inline-block;
+	padding: 10px;
+  color: #fff;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.staff > ul li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+.staff > ul li h3 {
+	margin: 0 0 5px;
+}
+.staff > ul li p {
+	font-size: .9em;
+	line-height: 1.5em;
+	color: #999;
+}
+
+.poi-a{
+  background-color: rgb(33, 72, 123);
+}
+.poi-b{
+  background-color: rgb(33, 72, 123);
+}
+.poi-c{
+  background-color: rgb(33, 72, 123);
+}
+.poi-d{
+  background-color: rgb(121, 147, 69);
+}
+.poi-e{
+  background-color: rgb(190, 7, 18);
+}
+.poi-f{
+  background-color: rgb(190, 7, 18);
+}
+.poi-g{
+  background-color: rgb(232, 112, 36);
+}
+.poi-h{
+  background-color: rgb(232, 112, 36);
+}

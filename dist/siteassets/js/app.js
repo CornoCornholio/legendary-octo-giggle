@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".staff").hide(),$(".card").click(function(f){f.preventDefault(),$(".staff").hide();var t=$(this).data("staff");$("#"+t).show()}),$(".staff").click(function(f){$(".staff").hide()})});
