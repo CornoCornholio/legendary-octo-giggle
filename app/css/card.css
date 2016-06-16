@@ -226,7 +226,7 @@
     }
 }
 .lib-panel {
-    margin-bottom: 20Px;
+
 }
 .lib-panel img {
     width: 100%;
@@ -274,12 +274,15 @@
 .no-padding {
     padding: 0;
 }
-
-
+.staff {
+  margin: 0 4px
+}
 
 .staff > ul {
 	list-style: none;
 	font-size: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 .staff > ul li {
 	display: inline-block;
@@ -295,12 +298,12 @@
 	-webkit-box-sizing: border-box;
 }
 .staff > ul li img {
-	max-width: 100%;
+	max-width: 64px;
 	height: auto;
 	margin: 0 0 10px;
 }
-.staff > ul li h3 {
-	margin: 0 0 5px;
+.staff > ul li div{
+  text-align: right;
 }
 .staff > ul li p {
 	font-size: .9em;
@@ -308,27 +311,139 @@
 	color: #999;
 }
 
+
+/*a little bit of reset*/
+.staff-list, .staff-list p, .staff-list h5 {
+list-style: none;
+margin:0; padding:0;
+color: white;
+}
+
+.staff-list > li{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.staff-list > li > .image{
+  display:block;
+  float:left;
+  margin-right:10px;
+}
+
+/*
+this instructions are to force the dimensions of image and its container <a>
+*/
+.staff-list > li > .image,
+.staff-list > li > .image > img{
+  width:64px; height:64px;
+}
+
+
 .poi-a{
   background-color: rgb(33, 72, 123);
 }
+.poi-a-2{
+  background-color: rgb(33, 72, 123);
+}
+.poi-a-3{
+  background-color: rgb(53, 92, 123);
+}
+.poi-a-4{
+  background-color: rgb(73, 112, 123);
+}
+
 .poi-b{
   background-color: rgb(33, 72, 123);
 }
+.poi-b-2{
+  background-color: rgb(33, 72, 123);
+}
+.poi-b-3{
+  background-color: rgb(53, 92, 123);
+}
+.poi-b-4{
+  background-color: rgb(73, 112, 123);
+}
+
+
 .poi-c{
   background-color: rgb(33, 72, 123);
 }
+.poi-c-2{
+  background-color: rgb(33, 72, 123);
+}
+.poi-c-3{
+  background-color: rgb(53, 92, 123);
+}
+.poi-c-4{
+  background-color: rgb(73, 112, 123);
+}
+
+
 .poi-d{
   background-color: rgb(121, 147, 69);
 }
+.poi-d-2{
+  background-color: rgb(121, 147, 69);
+}
+.poi-d-3{
+  background-color: rgb(141, 167, 89);
+}
+.poi-d-4{
+  background-color: rgb(161, 187, 109);
+}
+
+
 .poi-e{
   background-color: rgb(190, 7, 18);
 }
+.poi-e-2{
+  background-color: rgb(190, 7, 18);
+}
+.poi-e-3{
+  background-color: rgb(190, 27, 38);
+}
+.poi-e-4{
+  background-color: rgb(190, 47, 58);
+}
+
 .poi-f{
   background-color: rgb(190, 7, 18);
 }
+.poi-f-2{
+  background-color: rgb(190, 7, 18);
+}
+.poi-f-3{
+  background-color: rgb(190, 27, 38);
+}
+.poi-f-4{
+  background-color: rgb(190, 47, 58);
+}
+
 .poi-g{
   background-color: rgb(232, 112, 36);
 }
+.poi-g-2{
+  background-color: rgb(232, 112, 36);
+}
+.poi-g-3{
+  background-color: rgb(232, 132, 56);
+}
+.poi-g-4{
+  background-color: rgb(232, 152, 76);
+}
+
 .poi-h{
   background-color: rgb(232, 112, 36);
+}
+.poi-h-2{
+  background-color: rgb(232, 112, 36);
+}
+.poi-h-3{
+  background-color: rgb(232, 132, 56);
+}
+.poi-h-4{
+  background-color: rgb(232, 152, 76);
 }

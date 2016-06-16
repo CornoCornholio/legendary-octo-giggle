@@ -10,6 +10,7 @@ module.exports = {
   css: appRoot + '**/*.css',
   js: appRoot + '**/*.js',
   md: appRoot + '**/*.md',
+  handlebars: appRoot + '**/*.handlebars',
   images: appRoot + '**/*.png',
   style: 'css/**/*.css',
   output: outputRoot,
